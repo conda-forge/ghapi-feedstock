@@ -1,5 +1,5 @@
 {% set name = "ghapi" %}
-{% set version = "0.1.23" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ghapi-{{ version }}.tar.gz
-  sha256: 93fa097e394d743c6702e217d588a4123696f62d055f2acc495166676843d59f
+  sha256: 157216e0a36055843ea289ff446b0626eea0da0a21ebe695cbed22056aeef1aa
 
 build:
   entry_points:
