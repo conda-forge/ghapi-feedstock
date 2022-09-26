@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@jtpio](https://github.com/jtpio/)
+* [@thewchan](https://github.com/thewchan/)
 
