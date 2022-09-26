@@ -18,7 +18,7 @@ build:
     - gh-create-workflow=ghapi.actions:gh_create_workflow
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -52,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - jtpio
+    - thewchan
