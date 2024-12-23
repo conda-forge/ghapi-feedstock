@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ghapi-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ghapi-{{ version }}.tar.gz
   sha256: 64fdd9f06d8e3373065c42c2a03e067e2bbb9ca18b583cd6e38a28aaad0224f6
 
 build:
@@ -18,18 +18,18 @@ build:
     - gh-create-workflow=ghapi.actions:gh_create_workflow
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - fastcore >=1.7.2
     - packaging
     - pip
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -43,6 +43,7 @@ test:
     - gh-create-workflow --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fastai/ghapi/
