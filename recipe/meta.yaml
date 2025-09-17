@@ -1,5 +1,5 @@
 {% set name = "ghapi" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ghapi-{{ version }}.tar.gz
-  sha256: 64fdd9f06d8e3373065c42c2a03e067e2bbb9ca18b583cd6e38a28aaad0224f6
+  sha256: 9ab02dcd06b3c622ea2d9b21a2efee316076a744ce7847251a2fe9f542f381df
 
 build:
   entry_points:
@@ -18,7 +18,7 @@ build:
     - gh-create-workflow=ghapi.actions:gh_create_workflow
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
