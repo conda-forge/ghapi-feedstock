@@ -27,10 +27,10 @@ build:
 requirements:
   host:
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools >=64.0
   run:
-    - python >=${{ python_min }}.*
+    - python >=${{ python_min }}
     - fastcore >=1.7.2
     - packaging
     - pip
