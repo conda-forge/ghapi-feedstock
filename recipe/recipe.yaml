@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ghapi
-  version: 1.0.8
+  version: "1.0.9"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ghapi-${{ version }}.tar.gz
-  sha256: 9ab02dcd06b3c622ea2d9b21a2efee316076a744ce7847251a2fe9f542f381df
+  sha256: 1551300d38f439da39ea9dce2beb197e8485489bafaee2bbfbf1843bc6c59081
 
 build:
   number: 0
