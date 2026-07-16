@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ghapi
-  version: "2.0.0"
+  version: "2.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ghapi-${{ version }}.tar.gz
-  sha256: 95da3c14e602d1c49dee6d8e3b0d4472c97b3eb1d05b800f56e86f3ce11ff33c
+  sha256: f371e2794fffae53e2d891758c2696a21ba4a44c843e9142006077bd62a88641
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.14.3
+    - fastcore >=1.14.5
     - fastspec >=0.1.0
     - pip
 
