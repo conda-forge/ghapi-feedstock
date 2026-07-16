@@ -31,7 +31,7 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.14.3
+    - fastcore >=1.14.5
     - fastspec >=0.1.0
     - pip
 
