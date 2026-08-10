@@ -32,8 +32,8 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.1.16
-    - fastspec >=0.1.5
+    - fastcore >=2.2.6
+    - fastspec >=0.1.7
     - tomli
 
 tests:
