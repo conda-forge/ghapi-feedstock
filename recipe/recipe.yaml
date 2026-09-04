@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: ghapi
-  version: "2.1.1"
-  python_min: "3.11"
+  version: "2.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ghapi-${{ version }}.tar.gz
-  sha256: 60f309a1a60dfff5e003e3874edd3044e5b029215df07600ba896180ed59e90d
+  sha256: f78126f1d7841cfdf4064d3937e02153bfed040bc687addf2273f890da398e56
 
 build:
   number: 0
@@ -32,8 +31,9 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.2.6
-    - fastspec >=0.2.0
+    - fastcore >=2.2.7
+    # they made a breaking change in 0.2.4
+    - fastspec >=0.2.1,<0.2.4
     - tomli
 
 tests:
