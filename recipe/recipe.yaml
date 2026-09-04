@@ -32,7 +32,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastcore >=2.2.7
-    - fastspec >=0.2.1
+    # they made a breaking change in 0.2.4
+    - fastspec >=0.2.1,<0.2.4
     - tomli
 
 tests:
