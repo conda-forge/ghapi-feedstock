@@ -28,7 +28,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=64
+    - setuptools >=77
   run:
     - python >=${{ python_min }}
     - fastcore >=2.2.23
